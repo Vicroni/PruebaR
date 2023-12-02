@@ -1,38 +1,84 @@
-.App {
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.center-table{
+  padding: 20px 10%;
+  width: 80%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
   text-align: center;
+  padding: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.colored tbody tr:nth-child(even) {
+  background-color: #112233 ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.colored tbody tr:nth-child(odd) {
+  background-color: #556677;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+button:hover{
+  background-color: #19581b; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu{
+  margin: 20px 10%;  
+  font-family: arial, sans-serif;
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.menu .child{
+  padding: 4px;
+  
+}
+
+button{
+  width: 100%;
+}
+
+
+.header{
+  width: 80%;
+  font-family: arial, sans-serif;
+  padding: 3px 10%;
+  text-align: center;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 6px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
